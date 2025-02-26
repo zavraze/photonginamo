@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photonginamo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Photobooth</h1>
+        <p id="counter">0/3</p>
+    </div>
+    <div class="container">
+        <div class="video-container">
+            <video id="video" autoplay playsinline></video>
+            <div id="timer">3</div>
+        </div>
+        <div class="pics" id="pics">
+            <img id="capturedImage">
+            <img id="capturedImage2">
+            <img id="capturedImage3">
+            <!-- <div class="pics-container">arf</div> -->
+        </div>
+        <div class="buttons">
+            <button id="capture">Capture</button>
+            <a href="canvas.html">DONE</a>
+        </div>
+    </div>
+    <canvas id="canvas" style="display: none;"></canvas>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

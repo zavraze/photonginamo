@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photonginamo</title>
+    <link rel="stylesheet" href="canvas.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Picture nyo mga tanga</h1>
+        <div id="preview-container" class="pics">
+            <img id="preview1">
+            <img id="preview2">
+            <img id="preview3">
+            <div class="box">
+                <p id="preview-caption"></p>
+                <time id="current-date"></time>
+            </div>
+        </div>
+    </div>
+
+    <div class="background">
+        <h2>Choose Background Color</h2>
+        <div class="colorbtn">
+            <button id="blackButton" class="black"></button>
+            <button id="whiteButton" class="white"></button>
+            <button id="blueButton" class="blue"></button>
+            <button id="pinkButton" class="pink"></button>
+            <button id="peachButton" class="peach"></button>
+            <button id="purpleButton" class="purple"></button>
+        </div>
+        <label for="bgColor">Customize</label>
+        <input type="color" id="bgColor" value="#800080">
+        <div class="date">
+            <input type="checkbox" id="addate" name="date" checked>
+            <label for="date">Date</label>
+        </div>
+        <div class="btns">
+            <button id="download">Download</button>
+            <a href="indexes.html">Again</a>
+        </div>
+    </div>
+    
+    <canvas id="canvas" style="display: none;"></canvas>
+
+    <script src="script.js"></script>
+</body>
+</html>
