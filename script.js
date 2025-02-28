@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         canvas.width = video.videoWidth;
                         canvas.height = video.videoHeight;
                         
-                        // Mirror image effect
+                    // Mirror image effect
                     context.translate(canvas.width, 0);
                     context.scale(-1, 1);
                     context.drawImage(video, 0, 0, canvas.width, canvas.height);

@@ -17,16 +17,19 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 60%;
     width: 75%;
     /* max-width: 100%; */
     margin-bottom: 15px;
 }
 
-.header h1{
+.header h1 a{
     font-weight: 200;
     font-size: 30px;
     left: 100px;
+    text-decoration: none;
+    color: #000;
 }
 
 .header p {
@@ -45,6 +48,14 @@ body {
     gap: 15%;
     padding: 15px;
     /* border: 3px solid red; */
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
 }
 
 .video-container {
@@ -110,20 +121,13 @@ img {
     font-weight: 400;
 }
 
-.buttons {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 50%;
-    margin-right: 500px;
-}
-
 button {
     padding: 1.3em 2em;
     font-size: 15px;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2.5px;
+    width: 150px;
     font-weight: 700;
     color: #000;
     background-color: #fafaf2;
@@ -134,7 +138,7 @@ button {
     cursor:pointer;
 }
 
-.buttons a {
+.main a {
     padding: 1.3em 2em;
     font-size: 15px;
     text-transform: uppercase;
