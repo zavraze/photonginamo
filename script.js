@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const newColor = event.target.value;
             localStorage.setItem("bgColor", newColor);
             document.getElementById("preview-container").style.backgroundColor = newColor;
-            updatedTextColor(newColor);
+            updateTextColor(newColor);
 
             // const textColor = newColor === "#000000" ? "white" : "black";
             // document.getElementById("current-date").style.color = textColor;
